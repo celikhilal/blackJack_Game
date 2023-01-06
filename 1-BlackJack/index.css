@@ -1,0 +1,62 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("images/bj.PNG");
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    color: goldenrod;
+    margin-top: 40px;
+    font-size: 45px;
+    font-family: 'Bungee Shade', cursive;
+}
+.container{
+    margin-top: 160px;
+    font-weight: bold;
+}
+
+#message-el {
+    font-style: italic;
+}
+
+.btnn {
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+#new{
+    width: 60px;
+    border-radius: 5px;
+    color: black;
+    margin-top: 10px;
+    background-color: #016f32;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: black;
+}
+
+::-ms-input-placeholder {
+    color: black;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    background-color: #016f32;
+}
