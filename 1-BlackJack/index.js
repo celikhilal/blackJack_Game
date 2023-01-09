@@ -9,16 +9,16 @@ let sumEl = document.getElementById("sum-el")
 // let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
+let myLeads =[]
+let inputEl = document.getElementById("new")
 
 function submitData(){
-    let inputEl = document.getElementById("new").value
-    playerEl.textContent = inputEl + ": " + dollar + " $"
-    inputEl.forEach();{
-        inputEl.value = ""
-    }
-};
-submitData()
-
+    myLeads.push(inputEl.value)
+    inputEl.value = ""
+    playerEl.textContent = myLeads + ": " + dollar + " $"
+    document.getElementById("disabled-btn").disabled = false
+}
+renderGame()
 
 function getRandomCard() {
     let randomNumber = Math.floor( Math.random()*13 ) + 1
@@ -68,18 +68,7 @@ function newCard() {
         let card = getRandomCard()
         sum += card
         cards.push(card)
-        renderGame()        
+        renderGame()
     }
 }
-
-// function dollar(){
-//     if ( hasBlackJack === true){
-//         return dollar += 100
-//     } else if (isAlive === true){
-//         return dollar -= 50
-//     } else {
-//         return dollar -=100
-//     }
-// }
-// dollar()
 
